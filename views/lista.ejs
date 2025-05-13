@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Personas</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Personas</h1>
+
+
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% persons.forEach(function(persona) { %>
+                <tr>
+                    <td>
+                        <%= persona.cedula %>
+                    </td>
+                    <td>
+                        <%= persona.nombre %>
+                    </td>
+                    <td>
+                        <%= persona.apellido %>
+                    </td>
+                    <td>
+                        <%= persona.edad %>
+                    </td>
+                    <td>
+                        <%= persona.email %>
+                    </td>
+                    <td>
+                        <a href="/editar/<%= persona.cedula %>">Editar</a>
+                        <a href="/eliminar/<%= persona.cedula %>"
+                            onclick="return confirm('¿Seguro que deseas eliminar este registro?');">Eliminar</a>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+    <br>
+    <a href="/">Volver a Registro</a>
+
+    <footer>
+        <p>&copy; 2025 Creado por BSR</p>
+    </footer>

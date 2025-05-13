@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#records {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+li span {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 18px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+footer{
+    align-content: center;
+}
